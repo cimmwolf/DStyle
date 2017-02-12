@@ -1,5 +1,13 @@
 body
-  background: #363739 url('#{$img-path}/main-background.jpg')
+    background: #363739 url('#{$img-path-d-style}/main-background.jpg')
 
 .container-fluid
-  @include container-fixed()
+    @include container-fixed()
+
+ul.mobile-friendly
+    > li > a
+        display: inline-block
+        padding: 5px 0
+
+.before-list
+    margin-bottom: 0
