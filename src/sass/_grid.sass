@@ -1,17 +1,13 @@
+@import "bootstrap/grid"
+.container-root, .container-fluid, .container, .container-text
+    @media(min-width: $screen-md-min)
+        padding-left: $grid-gutter-width
+        padding-right: $grid-gutter-width
+
 .container-root
-  max-width: 1280px
-  padding-left: $grid-gutter-width / 2
-  padding-right: $grid-gutter-width / 2
-  @include container-fixed()
-  @media(min-width: $screen-md-min)
-    padding-left: $grid-gutter-width
-    padding-right: $grid-gutter-width
+    max-width: 1280px
+    @include container-fixed()
 
 .container-text
-  max-width: 800px
-  padding-left: $grid-gutter-width / 2
-  padding-right: $grid-gutter-width / 2
-  @include container-fixed()
-  @media(min-width: $screen-md-min)
-    padding-left: $grid-gutter-width
-    padding-right: $grid-gutter-width
+    max-width: 800px
+    @include container-fixed()
