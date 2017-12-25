@@ -1,4 +1,4 @@
-<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="../polymer/polymer.html">
 <dom-module id="d-style">
     <template>
         <style>
@@ -349,7 +349,28 @@
             html, :host {
                 color: var(--primary-text-color);
                 @apply --paper-font-common-base;
-                font-weight: 300;}
+                font-weight: 400;
+                font-size: 15px;}
+
+            h1 {font-weight: 300; font-size: 112px}
+
+            h2, h3, h4, h5, th {font-weight: 400;}
+
+            h2 {font-size: 56px}
+
+            h3 {font-size: 45px}
+
+            h4 {font-size: 34px}
+
+            h5, .headline {font-size: 24px}
+
+            h6, .title {font-size: 20px; font-weight: 500}
+
+            hr {margin: 15px 0; opacity: 0.88; border-bottom: 0}
+
+            .text-large {font-size: 18px}
+
+            .text-small {font-size: 12px}
 
             a { color: var(--accent-color); text-decoration: none; }
 
@@ -457,9 +478,6 @@
                 background-color: #fff; }
         </style>
         <style>
-            h1, h2, h3, h4, h5, h6, th {
-                font-weight: 300;}
-
             button.pseudo {
                 color: var(--accent-color);
                 background: none;
